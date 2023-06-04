@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Projects</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .project-card {
+      margin-bottom: 20px;
+      background-color: transparent;
+      /* Set the background color to transparent */
+      border: none;
+      /* Remove the border */
+    }
+
+    .project-card img {
+      transition: opacity 0.3s ease-in-out;
+      /* Add a smooth transition effect */
+    }
+
+    .project-card:hover img {
+      opacity: 0.7;
+      /* Reduce the opacity on hover */
+    }
+
+    .project-card .card-text {
+      display: none;
+      /* Hide the text by default */
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 5px 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: black;
+      font-weight: bold;
+    }
+
+    .project-card:hover .card-text {
+      display: block;
+      /* Show the text on hover */
+    }
+
+    body {
+      height: 100%;
+      /* Set the height to 100% of the viewport height */
+      background-image: url(/background6.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: black;
+      /* Set text color to black */
+      font-family: 'Your Attractive Font', sans-serif;
+      /* Replace 'Your Attractive Font' with the desired font name */
+    }
+
+    /* Customize navbar styles */
+    .navbar {
+      font-size: 20px;
+      /* Increase the text size */
+      color: black;
+      /* Set text color to white */
+      position: relative;
+      /* Add relative positioning */
+      z-index: 1;
+      /* Set a higher z-index to keep it above the blurred image */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      /* Add box shadow to the navbar */
+      backdrop-filter: blur(10px);
+      /* Apply the blur effect to the navbar */
+      margin-bottom: 50px;
+      /* Add margin-bottom of 50px */
+    }
+
+    .navbar-nav {
+      margin: auto;
+      /* Center the navbar */
+      align-items: center;
+      /* Center the navbar vertically */
+      justify-content: center;
+      /* Center the navbar horizontally */
+    }
+
+    .navbar-nav .nav-link {
+      color: black;
+      /* Set text color to white */
+    }
+
+    .projects-heading {
+      color: black;
+      /* Set text color to black */
+      text-align: center;
+      /* Center the text */
+      margin-top: 50px;
+      /* Add top margin of 50px */
+      margin-bottom: 50px;
+      /* Add bottom margin of 50px */
+      position: relative;
+      /* Add relative positioning */
+    }
+
+    .projects-heading::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      background-image: url(/background6.jpg);
+      filter: blur(20px);
+      z-index: -1;
+    }
+
+    /* Customize the scrollbar for webkit-based browsers (Chrome, Safari, Opera) */
+    ::-webkit-scrollbar {
+      width: 12px;
+      /* Set the width of the scrollbar */
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+      /* Set the background color of the track to transparent */
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: gray;
+      /* Set the color of the scrollbar handle to gray */
+    }
+
+    /* Customize the scrollbar for Mozilla Firefox */
+    /* Note: Mozilla Firefox supports customizing the scrollbar from version 64 onwards */
+    /* You may need to use vendor-specific prefixes for earlier versions of Firefox */
+
+    /* Set the width and color of the scrollbar */
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="margin-left: 30px;" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/skills.html">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/education.html">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/experience.html">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="projects-heading"><b>Projects</b></h1>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card project-card">
+          <img src="/background.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-text">Project 1</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card project-card">
+          <img src="/background4.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-text">Project 2</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card project-card">
+          <img src="/background3.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-text">Project 3</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card project-card">
+          <img src="/background2.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-text">Project 4</div>
+        </div>
+      </div>
+      <!-- Add more project cards as needed -->
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

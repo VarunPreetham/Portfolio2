@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Experience</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            height: 100vh;
+            /* Set the height to 100% of the viewport height */
+            background-image: url(/background5.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            /* Set text color to white */
+            font-family: sans-serif;
+            /* Set font style to sans-serif */
+            margin: 0;
+            /* Remove default margin */
+            padding: 0;
+            /* Remove default padding */
+        }
+
+        .navbar {
+            font-size: 20px;
+            /* Increase the text size */
+            position: relative;
+            /* Add relative positioning */
+            z-index: 1;
+            /* Set a higher z-index to keep it above the blurred image */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            /* Add box shadow to the navbar */
+            backdrop-filter: blur(10px);
+            /* Apply the blur effect to the navbar */
+            margin-bottom: 50px;
+            /* Add margin-bottom of 50px */
+        }
+
+        .navbar-nav {
+            margin: auto;
+            /* Center the navbar */
+            align-items: center;
+            /* Center the navbar vertically */
+            justify-content: center;
+            /* Center the navbar horizontally */
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            /* Set text color to white */
+        }
+
+        .projects-heading {
+            color: white;
+            /* Set text color to white */
+            text-align: center;
+            /* Center the text */
+            margin-top: 50px;
+            /* Add top margin of 50px */
+            margin-bottom: 50px;
+        }
+
+        .container {
+            position: relative;
+            /* Set relative positioning */
+            z-index: 2;
+            /* Set a higher z-index to keep it above the blurred background */
+            backdrop-filter: blur(10px);
+            /* Apply the blur effect to the container */
+            padding: 20px;
+            /* Add padding to the container */
+        }
+
+        .company-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .company-section img {
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        /* Customize the scrollbar for webkit-based browsers (Chrome, Safari, Opera) */
+        ::-webkit-scrollbar {
+            width: 12px;
+            /* Set the width of the scrollbar */
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+            /* Set the background color of the track to transparent */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: gray;
+            /* Set the color of the scrollbar handle to gray */
+        }
+
+        /* Customize the scrollbar for Mozilla Firefox */
+        /* Note: Mozilla Firefox supports customizing the scrollbar from version 64 onwards */
+        /* You may need to use vendor-specific prefixes for earlier versions of Firefox */
+
+        /* Set the width and color of the scrollbar */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" style="margin-left: 30px;"
+                                href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/education.html">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/experience.html">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div style="text-align: center;">
+        <h1>My Experience</h1>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="company-section">
+                    <img src="/waycool.jpg" alt="Company A Logo">
+                    <div>
+                        <h3>Waycool Foods and Products</h3>
+                        <p>Position: IoT Design and Development Engineer </p>
+                        <p>Experience: Jan 2023 - present</p>
+                        <p>Description: PCB Designing and Prototyping of Electronics on the same. Designing and Developing Embedded Firmware for the device. Building Smart IoT Devices to improve the yield in Agriculture.</p>
+                    </div>
+                </div>
+
+                <div class="company-section">
+                    <img src="/freelance.jpg" alt="Company B Logo">
+                    <div>
+                        <h3>Freelancing</h3>
+                        <p>Position: Software Developer</p>
+                        <p>Experience: Nov 2022 - present</p>
+                        <p>Description: Developing Web application for clients as per their requirements. Software Developing services </p>
+                    </div>
+                </div>
+
+                <div class="company-section">
+                    <img style="background-color: white;" src="/tns.png" alt="Company C Logo">
+                    <div>
+                        <h3>TNS India Foundation</h3>
+                        <p>Position: Student Full Stack Developer (Java / J2EE)</p>
+                        <p>Experience: 5mos</p>
+                        <p>Description: A Training Course partnered with Accenture. Training on Java Full Stack Development and Soft Skills for preparing a Industry ready Trained Prefessional.</p>
+                    </div>
+                </div>
+
+                <!-- Add more company sections as needed -->
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light mt-5">
+        <div class="container">
+            <p style="color: black;">&copy; 2023 My Experience</p>
+        </div>
+    </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

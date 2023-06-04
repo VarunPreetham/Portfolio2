@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.bundle.js"></script>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            background-image: url(/background4.jpg);
+            background-size: cover;
+            background-position: center;
+            color: black;
+            /* Set text color to white */
+            font-family: 'Your Attractive Font', sans-serif;
+            /* Replace 'Your Attractive Font' with the desired font name */
+        }
+
+        #contact {
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        #contact ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Customize navbar styles */
+        .navbar {
+            font-size: 20px;
+            /* Increase the text size */
+            color: black;
+            /* Set text color to white */
+            position: relative;
+            /* Add relative positioning */
+            z-index: 1;
+            /* Set a higher z-index to keep it above the blurred image */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            /* Add box shadow to the navbar */
+        }
+
+        .navbar:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            backdrop-filter: blur(10px);
+            /* Apply the blur effect to the background */
+            z-index: -1;
+            /* Set a lower z-index to place it behind the navbar */
+        }
+
+        .navbar-nav {
+            margin: auto;
+            /* Center the navbar */
+            align-items: center;
+            /* Center the navbar vertically */
+            justify-content: center;
+            /* Center the navbar horizontally */
+        }
+
+        .navbar-nav .nav-link {
+            color: black;
+            /* Set text color to white */
+        }
+
+        /* Add any additional CSS styles as needed */
+        /* Customize the scrollbar for webkit-based browsers (Chrome, Safari, Opera) */
+        ::-webkit-scrollbar {
+            width: 12px;
+            /* Set the width of the scrollbar */
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+            /* Set the background color of the track to transparent */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: gray;
+            /* Set the color of the scrollbar handle to gray */
+        }
+
+        /* Customize the scrollbar for Mozilla Firefox */
+        /* Note: Mozilla Firefox supports customizing the scrollbar from version 64 onwards */
+        /* You may need to use vendor-specific prefixes for earlier versions of Firefox */
+
+        /* Set the width and color of the scrollbar */
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" style="margin-left: 30px;"
+                                href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/education.html">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/experience.html">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+        <section id="education">
+            <!-- Content of your Education section -->
+            <div style="text-align: center; margin-top: 50px; backdrop-filter: blur(15px);">
+                <h1><b>Education</b></h1>
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="/nitte.jpg" alt="Your Image" class="img-fluid">
+                    </div>
+                    <div style="backdrop-filter: blur(15px);" class="col-md-6">
+                        <h2>Bachelor's Degree</h2>
+                        <p>Welcome to my website! I'm Varun Preetham, a proud graduate of Nitte Meenakshi Institute of
+                            Technology (NMIT). I completed my Bachelor's degree in Electrical and Electronics
+                            Engineering from this esteemed institution in 2022, achieving a commendable CGPA of 6.7.
+                            <br>
+                            During my time at NMIT, I gained a strong foundation in my field, thanks to the
+                            comprehensive curriculum and dedicated faculty. I actively participated in academic and
+                            extracurricular activities, fostering innovation and honing my problem-solving skills.
+                             <br>
+                            NMIT's emphasis on holistic development empowered me to enhance my technical expertise and
+                            interpersonal skills. This has shaped my passion for lifelong learning and personal growth.
+                            <br>
+                            Explore my website to learn more about my diverse interests and programming expertise.
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div style="backdrop-filter: blur(15px);" class="col-md-6">
+                        <h2>Associate's Degree</h2>
+                        <p> A passionate advocate of science, from my early childhood, I was captivated by the mysteries of the natural world, which led me to pursue an Associate's degree in Physics, Chemistry, Mathematics, and Biology from Seshadripuram Composite PU College. I graduated with a commendable percentage of 64.
+                            <br>
+                            During my time at Seshadripuram College, I immersed myself in the fascinating realms of physics, chemistry, mathematics, and biology. This comprehensive education nurtured my love for these subjects, shaping my analytical thinking and deepening my understanding of the fundamental principles governing our universe.
+                            <br>
+                            The interplay between these scientific disciplines intrigued me, allowing me to make connections and broaden my perspective. This passion for science has remained a driving force in my academic and professional journey.
+                            </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/scpuc.png" alt="Associate's Degree Image" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <img src="/shs.jpg" alt="High School Image" class="img-fluid">
+                    </div>
+                    <div style="backdrop-filter: blur(15px);" class="col-md-6">
+                        <h2>High School</h2>
+                        <p>a dedicated scholar who achieved academic excellence at Seshadripuram High School. I graduated with an impressive percentage of 84, showcasing my commitment to learning and growth.
+                            <br>
+                            At Seshadripuram High School, I honed critical thinking, problem-solving, and communication skills—essential assets that have served me well on my educational and professional journey.
+                            <br>
+                            Explore my website to discover more about my dedication to academic pursuits and my ongoing quest for personal and intellectual development.
+                            <br>
+                            Thank you for visiting my website, where scholarship meets ambition.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Rest of your code -->
+
+</body>
+
+</html>
