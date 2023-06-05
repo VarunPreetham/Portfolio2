@@ -1,25 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Varun Preetham Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>About</title>
+  <script src="/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" type="text/css" href="about.css">
 </head>
+
 <body>
-  <div id="content">
-    <div class="centered">
-      <h1>Hey </h1>
-      <p>Scroll down to know more about me</p><br>
-      <p id="scroll-down-text">Scroll Down</p>
-    </div>
+  <div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" style="margin-left: 30px;" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/skills.html">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/education.html">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/experience.html">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </div>
 
-  <a id="redirect-link" href="https://varunpreetham.github.io/Portfolio/about.html"></a>
+  <div>
+    <section id="about">
+      <!-- Content of your About Me section -->
+      <div class="container mt-5" style="backdrop-filter: blur(20px);">
+        <div class="row">
+          <div class="col-md-6 d-flex justify-content-center">
+            <img src="/profile.avif" alt="Your Image" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <h1><b>About Me</b></h1>
+            <p>Welcome to my captivating world! I'm Varun Preetham, a 22-year-old graduate in Electrical and Electronics
+              Engineering. A good listener with a quiet demeanor, I leave a lasting impression when I open up. Fluent in
+              English, Hindi, Kannada, and Telugu, I bridge cultural gaps effortlessly.
+              <br><br>
+              Sports and games are my passions. Whether it's badminton, chess, or immersive video games, I embrace the
+              thrill and growth they offer. Despite my electrical engineering background, I was drawn to programming and
+              have self-taught various languages.
+              <br><br>
+              My story is one of curiosity, ambition, and unwavering dedication. As a polyglot with diverse interests,
+              I'm seeking opportunities to apply my programming skills in an organization that respects my multifaceted
+              nature.
+              <br><br>
+              Join me in a world where innovation meets inspiration, and together, we'll create boundless possibilities.
+              Welcome to Varun Preetham's world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
-  <p id="redirecting-text">Redirecting...</p>
 
-  <script src="script.js"></script>
+  <div>
+    <section style="backdrop-filter: blur(15px);" id="contact">
+      <h2>Contact Me</h2>
+      <div  class="contact-item">
+        <img class="contact-logo" src="/email-logo.jpg" alt="Email Logo">
+        <span>Email: varunpreetham@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <img class="contact-logo" src="/phone-logo.jpg" alt="Phone Logo">
+        <span>Phone: +91 93806 64640</span>
+      </div>
+      <div class="contact-item">
+        <img class="contact-logo" src="/linkedin-logo.png" alt="Address Logo">
+        <a class="nav-link" href="https://www.linkedin.com/in/varunpreetham/">LinkedIn</a>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Rest of your code -->
+
 </body>
+
 </html>
